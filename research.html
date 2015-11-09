@@ -1,0 +1,222 @@
+<!DOCTYPE HTML>
+<!--
+	Monochromed: A responsive HTML5 website template by HTML5Templates.com
+	Released for free under the Creative Commons Attribution 3.0 license (html5templates.com/license)
+	Visit http://html5templates.com for more great templates or follow us on Twitter @HTML5T
+-->
+<html>
+<head>
+<title>Karly Jacobsen | MBI</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<noscript>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="css/5grid/core.css" />
+<link rel="stylesheet" href="css/5grid/core-desktop.css" />
+<link rel="stylesheet" href="css/5grid/core-1200px.css" />
+<link rel="stylesheet" href="css/5grid/core-noscript.css" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/style-desktop.css" />
+</noscript>
+<script src="css/5grid/jquery.js"></script>
+<script src="css/5grid/init.js?use=mobile,desktop,1000px&amp;mobileUI=1&amp;mobileUI.theme=none"></script>
+<!--[if IE 9]><link rel="stylesheet" href="css/style-ie9.css" /><![endif]-->
+</head><body>
+<div id="header-wrapper">
+  <header id="header" class="5grid-layout">
+		<div class="row">
+			<div class="12u" id="logo"> <!-- Logo -->
+				<h1><a href="#"
+			  class="mobileUI-site-name">Karly Jacobsen</a></h1><br>
+				<p>Postdoctoral Fellow, Mathematical
+			  Biosciences Institute</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="12u" id="menu">
+				<nav class="mobileUI-site-nav">
+					<ul>
+					 	<li class="first"><a href="index.html">Home</a></li>
+						<li><a href="research.html">Research</a></li>
+						<li><a
+						href="Publications/CV.pdf">CV</a></li>
+						<li><a
+						href="publications.html">Publications</a></li>
+						<li><a
+						href="teaching.html">Teaching</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<!--<li><a href="personal.html">Personal</a></li>-->
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+</div>
+<div id="page-wrapper">
+<div class="5grid-layout">
+<div id="page">
+<div class="row">
+<div class="12u">
+<div class="row">
+<div class="10u">
+<section id="content">
+  <h2>Research</h2><br>
+  <p class="kjstyle"> As a mathematical biologist, I formulate and analyze
+  mathematical models of biological processes in order to understand
+  behavior, reveal correlations and predict success of interventions.  In doing so, I also pursue questions of mathematical
+  interest in areas such as applied dynamical systems, differential
+  equations, stochastic processes, linear algebra, graph theory and
+  statistics.  My primary interest is the study of infectious diseases
+  on networks. </p>
+  <p class="button-style2">
+    <a href="#dynamic">Dynamic networks</a>
+    <a href="#ebola">Ebola</a>
+    <a href="#resTime">Residence time</a>
+    <a href="#cholera">Cholera</a>
+    <a href="#virotherapy">Virotherapy</a> </p><br><br>
+						  
+<a name = "dynamic"></a>
+<p class="subtitle">Dynamic Networks</p>
+<p class="kjstyle"><img src="images/nbhd.png" align="right"
+  alt="" height="210px">
+  The homogeneous mixing assumption upon which many
+  epidemiological models are based fails to account for population-level
+  heterogeneities, such as host- and space-dependent transmissibility and
+  connectivity, which can critically impact disease spread.  We consider a stochastic SIR-type epidemic on a contact network with a
+  specified degree distribution. We determine a sufficient condition
+  on the degree distribution under which a well-known pair approximation model
+  gives the exact large graph limit of the stochastic process.  Based
+  on this result, we formulate a hybrid stochastic-deterministic model
+  which allows for Bayesian parameter estimation while remaining
+  computationally inexpensive.  We extend this framework to dynamic
+  multi-layer graphs where layers correspond to different interaction
+  types.  A key aspect of the work is that contact patterns changes in
+  response to infection. 
+  <!--Ongoing work includes formal proofs of a law
+  of large numbers and central limit theorem, analysis of the limiting
+ODE system, parameter identifiability, and fitting to Ebola data.  In addition, we plan to investigate control methods (e.g. vaccination, distribution of personal protective equipment) in which our multitype dynamic graph framework may reveal interesting tradeoffs in terms of optimal strategies.-->    <br></p><br>
+  
+<a name = "ebola"></a>
+<p class="subtitle">Ebola</p>
+<p class="kjstyle">
+Our primary application is Ebola
+for which we consider a two-layer graph with contact types corresponding to regular community
+contacts and healthcare contacts, features relevant
+for Ebola given the disproportionate Ebola risk experienced by
+healthcare workers and caregivers in the recent West Africa outbreak.  We are working in collaboration
+with the Kinshasa School of Public Health and the Ministry of Health
+in the Democratic Republic of the Congo.  Ongoing work includes formal proofs of a law
+  of large numbers and central limit theorem, analysis of the limiting
+ODE system, parameter identifiability, and fitting to Ebola data.  In addition, we plan to investigate control methods (e.g. vaccination, distribution of personal protective equipment) in which our multitype dynamic graph framework may reveal interesting tradeoffs in terms of optimal strategies.
+<!--While the DRC outbreaks are on a much smaller scale than the 2014 West Africa outbreak, the dataset is of high quality, providing detailed patient histories and contact tracing information which is critical for parameter identifiability.  Based on data from the 2014 outbreak, we have developed statistical inference methods for a branching process approximation which accounts for contact degree heterogeneity \cite{Burch2016}, which is relevant for such small outbreaks or the onset of a large outbreak.-->    <br></p><br>
+
+<a name = "resTime"></a>
+<p class="subtitle">Residence time</p>
+<p class="kjstyle"><img src="images/resTimeCentral.png" align="right"
+alt="Centrality of star" height="270px">
+  Invasion and control of disease on networks depends critically on
+both network structure and local characteristics of disease at the
+nodes, such as susceptibility, transmissibility and persistence.  We
+consider graphs with a notion of decay at the nodes where the
+reciprocal of decay measures how long the disease sticks around,
+e.g. infectious period or mean pathogen lifetime.  Standard distance
+measures between nodes on a graph, such as shortest path or commute
+time, only consider network structure.  We develop a metric on
+balanced graphs with decay that takes into account both network
+structure and decay rates.  The directed metric, which we refer to as
+residence time distance, is based on a generalized inverse of the
+graph Laplacian matrix first introduced by Tien et al. (2015).  
+We futher define a node centrality measure and develop a community
+detection algoirthm which, being based on residence time, account for
+local decay rates as well as graph structure.  Stochastic simulations
+of SIR-type disease on multi-patch community networks indicate that
+residence time distance and centrality inform features of epidemics such as outbreak size and time until infection.<br></p><br>
+
+<a name = "cholera"></a>
+  <p class="subtitle">Cholera in Bangladesh</p>
+<p class="kjstyle"><img src="images/Ganges_delta.jpg" align="right"
+  alt="" height="250px">
+  Cholera remains a serious public health burden in the developing
+  world with global burden estimated to be 2.8 million cholera cases
+  per year. Vibrio cholerae, the causative agent of cholera, is an
+  aquatic bacterium which is capable of living indefinitely in
+  environmental water bodies outside of human hosts. Transmission is
+  predominantly fecal-oral through contaminated water
+						  indicating that
+						  local surface water
+						  and sanitary
+						  conditions are
+						  paramount to the
+						  spread of the
+						  disease.  We combine
+						  hydrological
+						  modeling of surface
+						  waters, dynamic
+						  network disease
+  models and epidemiological data to investigate the seasonality of
+  cholera outbreaks in Bangladesh. We aim to determine the
+  hydrological and climatic drivers behind annual patterns of cholera
+  in Bangladesh and the large interannual variability in disease
+  severity in order to establish the most effective measures for the
+  prediction and mitigation of outbreaks.<br></p><br>
+
+<a name = "virotherapy"></a>
+<p class="subtitle">Oncolytic Virotherapy</p>
+<p class="kjstyle"><img src="images/CCN1.png" align="left" height="300px"
+alt="OV" >
+Oncolytic viruses (OV) selectively target and kill cancer cells and hold
+much promise as therapuetic agents that can amplify themselves in
+vivo. Yet challenges in drug development remain and therefore,
+mathematical modeling may provide valuable insight. We have developed a model for treatment with a fusogenic OV which is capable of spreading via cell-to-cell fusion
+within the tumor. The model is formulated as a nonlinear hyperbolic-parabolic
+partial differential equations system with a moving boundary.  Main
+results include proof of existence and uniqueness of solutions and
+numerical investigation of the effects of viral burst size and cell
+fusion rate on long-term tumor volume. Using a similar modeling framework, we have also investigated the
+upregulation of the matricellular protein CCN1 in virotherapy of glioma. Overexpression of CCN1 has been shown
+experimentally to induce an antiviral immune response including the
+proinflammatory activation of macrophages. Model results suggest that
+macrophage content is a critical factor to the success of OV therapy
+and to the reduction in tumor volume gained with coadministration of a
+CCN1 antibody. </p>
+							</section>
+						 
+						</div>
+						
+						 
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="5grid-layout">
+	<div id="copyright">
+	  	<p>377 Jennings Hall | 1735
+				Neil Avenue | Columbus, OH 43210 |
+				(614) 688-3198 |
+	jacobsen.50@osu.edu<br>
+
+	
+	</div>
+</div>
+</body>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-46355110-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</html>
