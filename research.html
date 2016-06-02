@@ -62,7 +62,7 @@
 <div class="10u">
 <section id="content">
   <h2>Research</h2><br>
-  <p class="kjstyle"> As a mathematical biologist, I formulate and analyze
+  <p class="kjstyle"> I formulate and analyze
   mathematical models of biological processes in order to understand
   behavior, reveal correlations and predict success of interventions.  In doing so, I also pursue questions of mathematical
   interest in areas such as applied dynamical systems, differential
@@ -72,9 +72,10 @@
   <p class="button-style2">
     <a href="#dynamic">Dynamic networks</a>
     <a href="#ebola">Ebola</a>
-    <a href="#resTime">Residence time</a>
+    <a href="#resTime">Distance on graphs</a>
+    <a href="#virotherapy">Virotherapy</a>
     <a href="#cholera">Cholera</a>
-    <a href="#virotherapy">Virotherapy</a> </p><br><br>
+     </p><br><br>
 						  
 <a name = "dynamic"></a>
 <p class="subtitle">Dynamic Networks</p>
@@ -112,26 +113,39 @@ ODE system, parameter identifiability, and fitting to Ebola data.  In addition, 
 <!--While the DRC outbreaks are on a much smaller scale than the 2014 West Africa outbreak, the dataset is of high quality, providing detailed patient histories and contact tracing information which is critical for parameter identifiability.  Based on data from the 2014 outbreak, we have developed statistical inference methods for a branching process approximation which accounts for contact degree heterogeneity \cite{Burch2016}, which is relevant for such small outbreaks or the onset of a large outbreak.-->    <br></p><br>
 
 <a name = "resTime"></a>
-<p class="subtitle">Residence time</p>
+<p class="subtitle">A new distance for graphs with absorption</p>
 <p class="kjstyle"><img src="images/resTimeCentral.png" align="right"
 alt="Centrality of star" height="270px">
-  Invasion and control of disease on networks depends critically on
-both network structure and local characteristics of disease at the
-nodes, such as susceptibility, transmissibility and persistence.  We
-consider graphs with a notion of decay at the nodes where the
-reciprocal of decay measures how long the disease sticks around,
-e.g. infectious period or mean pathogen lifetime.  Standard distance
-measures between nodes on a graph, such as shortest path or commute
-time, only consider network structure.  We develop a metric on
-balanced graphs with decay that takes into account both network
-structure and decay rates.  The directed metric, which we refer to as
-residence time distance, is based on a generalized inverse of the
-graph Laplacian matrix first introduced by Tien et al. (2015).  
+  Standard distance measures between nodes on a graph, such as shortest path or commute
+time, only consider network structure.  We develop a metric on what we call "graphs with absorption"
+ that takes into account both network structure and a local node characteristic, i.e. absorption.
+ This is motivated by the study of infectious disease on networks where absorption represents
+  pathogen decay, viral clearance, etc.  The directed metric we define is based on a 
+  generalized inverse of the graph Laplacian matrix, first introduced by Tien et al. (2015).  
 We futher define a node centrality measure and develop a community
-detection algoirthm which, being based on residence time, account for
-local decay rates as well as graph structure.  Stochastic simulations
-of SIR-type disease on multi-patch community networks indicate that
-residence time distance and centrality inform features of epidemics such as outbreak size and time until infection.<br></p><br>
+detection algorithm that account for local absorption rates as well as graph structure.  
+Stochastic simulations of SIR-type disease on multi-patch community networks indicate that
+our new distance and centrality metrics inform features of epidemics such as outbreak size and time until infection.<br></p><br>
+
+<a name = "virotherapy"></a>
+<p class="subtitle">Oncolytic Virotherapy</p>
+<p class="kjstyle"><img src="images/CCN1.png" align="left" height="300px"
+alt="OV" >
+Oncolytic viruses (OV) selectively target and kill cancer cells and hold
+much promise as therapuetic agents that can amplify themselves in
+vivo. Yet challenges in drug development remain and therefore,
+mathematical modeling may provide valuable insight. We have developed a model for treatment with a fusogenic OV which is capable of spreading via cell-to-cell fusion
+within the tumor. The model is formulated as a nonlinear hyperbolic-parabolic
+partial differential equations system with a moving boundary.  Main
+results include proof of existence and uniqueness of solutions and
+numerical investigation of the effects of viral burst size and cell
+fusion rate on long-term tumor volume. Using a similar modeling framework, we have also investigated the
+upregulation of the matricellular protein CCN1 in virotherapy of glioma. Overexpression of CCN1 has been shown
+experimentally to induce an antiviral immune response including the
+proinflammatory activation of macrophages. Model results suggest that
+macrophage content is a critical factor to the success of OV therapy
+and to the reduction in tumor volume gained with coadministration of a
+CCN1 antibody. </p><br>
 
 <a name = "cholera"></a>
   <p class="subtitle">Cholera in Bangladesh</p>
@@ -161,25 +175,7 @@ residence time distance and centrality inform features of epidemics such as outb
   severity in order to establish the most effective measures for the
   prediction and mitigation of outbreaks.<br></p><br>
 
-<a name = "virotherapy"></a>
-<p class="subtitle">Oncolytic Virotherapy</p>
-<p class="kjstyle"><img src="images/CCN1.png" align="left" height="300px"
-alt="OV" >
-Oncolytic viruses (OV) selectively target and kill cancer cells and hold
-much promise as therapuetic agents that can amplify themselves in
-vivo. Yet challenges in drug development remain and therefore,
-mathematical modeling may provide valuable insight. We have developed a model for treatment with a fusogenic OV which is capable of spreading via cell-to-cell fusion
-within the tumor. The model is formulated as a nonlinear hyperbolic-parabolic
-partial differential equations system with a moving boundary.  Main
-results include proof of existence and uniqueness of solutions and
-numerical investigation of the effects of viral burst size and cell
-fusion rate on long-term tumor volume. Using a similar modeling framework, we have also investigated the
-upregulation of the matricellular protein CCN1 in virotherapy of glioma. Overexpression of CCN1 has been shown
-experimentally to induce an antiviral immune response including the
-proinflammatory activation of macrophages. Model results suggest that
-macrophage content is a critical factor to the success of OV therapy
-and to the reduction in tumor volume gained with coadministration of a
-CCN1 antibody. </p>
+
 							</section>
 						 
 						</div>
